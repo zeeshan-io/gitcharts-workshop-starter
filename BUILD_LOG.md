@@ -139,3 +139,7 @@ Created BUILD_PLAN.md, PROMPTS.md, and BUILD_LOG.md before starting R-CLI.
 - Simplified all result views without changing collection behavior: metadata uses rule-separated stats, inspector sections use plain dividers, code uses light neutral panels, and the workshop handoff is an unboxed numbered list.
 - Browser QA passed for the empty state and the offline fixture result state at `http://127.0.0.1:5173/`.
 - Validation remained green after the UI pass: 3 test files, 10 tests, and a successful production build.
+
+### Rehearsal default repository
+
+- Changed the prefilled repository URL to `https://github.com/Backboard-io/Backboard-R-CLI` so the webinar rehearsal and live demonstration begin with a Backboard-owned project.

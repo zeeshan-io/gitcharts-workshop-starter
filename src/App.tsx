@@ -10,7 +10,7 @@ import type {
   SourceExcerpt,
 } from './types';
 
-const exampleUrl = 'https://github.com/ahmedkhaleel2004/gitdiagram';
+const exampleUrl = 'https://github.com/Backboard-io/Backboard-R-CLI';
 const MAX_VISIBLE_PATHS = 250;
 const defaultStarterRepositoryUrl = 'https://github.com/zeeshan-io/gitcharts-workshop-starter';
 const starterRepositoryUrl = import.meta.env.VITE_STARTER_REPO_URL?.trim() || defaultStarterRepositoryUrl;
