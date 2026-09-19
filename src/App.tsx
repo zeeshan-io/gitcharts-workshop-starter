@@ -12,7 +12,8 @@ import type {
 
 const exampleUrl = 'https://github.com/ahmedkhaleel2004/gitdiagram';
 const MAX_VISIBLE_PATHS = 250;
-const starterRepositoryUrl = import.meta.env.VITE_STARTER_REPO_URL?.trim() || 'https://github.com';
+const defaultStarterRepositoryUrl = 'https://github.com/zeeshan-io/gitcharts-workshop-starter';
+const starterRepositoryUrl = import.meta.env.VITE_STARTER_REPO_URL?.trim() || defaultStarterRepositoryUrl;
 
 function App() {
   const [repositoryUrl, setRepositoryUrl] = useState(exampleUrl);
@@ -74,7 +75,7 @@ function App() {
         </a>
         <a className="github-link" href={starterRepositoryUrl} target="_blank" rel="noreferrer">
           <GitHubIcon />
-          <span>{starterRepositoryUrl === 'https://github.com' ? 'GitHub' : 'Starter repository'}</span>
+          <span>Starter repository</span>
         </a>
       </header>
 

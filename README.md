@@ -40,7 +40,7 @@ GITHUB_TOKEN=your_token_here
 
 The token is read only by the Vite server plugin. It is never included in browser code or API responses. Do not prefix it with `VITE_`, because Vite exposes variables with that prefix to the browser.
 
-After publishing the workshop starter, the header's GitHub link can point to it by adding this non-secret value to `.env.local`:
+The header links to the public workshop starter by default. A fork or workshop variant can override the link by adding this non-secret value to `.env.local`:
 
 ```text
 VITE_STARTER_REPO_URL=https://github.com/your-account/your-starter-repo
