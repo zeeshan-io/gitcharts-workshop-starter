@@ -18,10 +18,10 @@ The starter does **not** call Backboard, infer architecture, render Mermaid, or 
 - Vite, React, and TypeScript
 - Vitest
 - Zod for runtime contracts
-- Mermaid preinstalled for the live-build flowchart checkpoint
+- Mermaid and Mermaid ELK preinstalled for the live-build flowchart checkpoints
 - Custom CSS
 
-React Flow and ELK were evaluated during prototyping and intentionally removed. GitCharts will use AI-generated semantic graph JSON compiled deterministically to Mermaid.
+The React Flow experiment was removed. GitCharts uses AI-generated semantic graph JSON compiled deterministically to Mermaid, with Mermaid's ELK layout package introduced during the grouped-layout checkpoint.
 
 ## Setup
 
@@ -64,9 +64,21 @@ Automated GitHub collector tests use an injected mock `fetch`; they never consum
 - 50,000 excerpt characters total
 - Generated output, dependencies, binaries, lockfiles, and repetitive low-signal paths are excluded
 
+## Workshop materials
+
+- [`workshop/README.md`](workshop/README.md): map of every workshop document, session prompt, and repository skill
+- [`workshop/WORKSHOP_GUIDE.md`](workshop/WORKSHOP_GUIDE.md): project explanation, architecture, teaching plan, timing, and definition of done
+- [`workshop/prompts`](workshop/prompts): setup, four live-build checkpoints, and browser QA prompts
+- [`workshop/planner`](workshop/planner): stable planner knowledge, live state, and the current planner-to-developer handoff
+- [`.agents/skills/gitcharts-checkpoint-builder`](.agents/skills/gitcharts-checkpoint-builder): one-checkpoint implementation discipline for R-CLI
+- [`.agents/skills/gitcharts-browser-qa`](.agents/skills/gitcharts-browser-qa): observable browser acceptance checks for R-CLI
+- [`workshop/SLIDES_PROMPT.md`](workshop/SLIDES_PROMPT.md): copy-ready instructions for regenerating the webinar deck
+
 ## Live-build checkpoints
 
-1. **Backboard architecture graph:** send `RepositoryContext` to a JSON-capable model, validate semantic groups/nodes/edges, and reject nonexistent repository paths.
-2. **Mermaid flowchart:** compile validated graph JSON into Mermaid, add clickable GitHub nodes, pan/zoom/fit controls, and PNG download.
+1. **Validated Backboard graph:** turn `RepositoryContext` into canonical `ArchitectureGraph` JSON without trusting model-generated IDs or links.
+2. **Basic Mermaid flowchart:** compile validated graph JSON into deterministic, escaped Mermaid.
+3. **Grouped ELK layout:** add Frontend, Backend, Database, and Shared subgraphs with a balanced layout.
+4. **Interaction and export:** add trusted GitHub navigation, zoom, pan, fit, reset, and full-diagram PNG download.
 
-The numbered prompts will live in `PROMPTS.md`, and completed checkpoint branches will provide workshop fallbacks.
+The starter deliberately stops before Checkpoint 1 so attendees can build every visible capability during the session.

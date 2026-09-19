@@ -49,10 +49,12 @@ Code gathers facts. AI interprets architecture. Code validates and renders. Huma
 
 ## Planned live-build checkpoints
 
-1. `starter`: polished repository inspector, live GitHub collection, fixtures, JSON context, and preinstalled webinar dependencies.
-2. `ai-graph`: Backboard structured-output route, graph schema, path validation, and cached fallback.
-3. `flowchart`: deterministic Mermaid compilation, clickable file nodes, pan/zoom, and PNG download.
-4. `review`: browser QA, tests, graceful fallbacks, and timed rehearsal.
+1. `architecture-json`: Backboard structured-output route, path-based model schema, canonical graph IDs, verified GitHub links, warnings, and JSON UI. No Mermaid.
+2. `basic-mermaid`: deterministic and escaped graph compilation plus the first rendered SVG. No groups or controls.
+3. `grouped-layout`: Frontend, Backend, Database, and Shared subgraphs with balanced Mermaid ELK layout. No interaction or export.
+4. `interaction-export`: trusted node navigation, keyboard access, zoom, pan, fit, reset, and full-diagram PNG download.
+
+Browser QA follows every checkpoint. A separate planner session owns checkpoint acceptance and writes one bounded handoff for the developer session at a time.
 
 ## Demo constraints
 

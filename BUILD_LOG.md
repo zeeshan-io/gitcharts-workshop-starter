@@ -143,3 +143,16 @@ Created BUILD_PLAN.md, PROMPTS.md, and BUILD_LOG.md before starting R-CLI.
 ### Rehearsal default repository
 
 - Changed the prefilled repository URL to `https://github.com/Backboard-io/Backboard-R-CLI` so the webinar rehearsal and live demonstration begin with a Backboard-owned project.
+
+### Workshop kit hardening and two-session workflow
+
+- Converted the successful four-checkpoint rehearsal into separate copy-ready prompts under `workshop/prompts`.
+- Incorporated rehearsal corrections directly into the first-pass prompts: application-owned canonical IDs, exact path validation, bounded ELK columns, root Mermaid `htmlLabels: false`, trusted post-render node handlers, 3x zoom-out, and full-view PNG export.
+- Added `workshop/WORKSHOP_GUIDE.md` with the project purpose, architecture, stack, data contracts, 35-minute runbook, Backboard explanation, rehearsal lessons, fallback strategy, and definition of done.
+- Added two repository R-CLI skills under `.agents/skills`: one for single-checkpoint implementation and one for evidence-based browser QA.
+- Added a two-session operating model. The planner holds stable context, live state, acceptance decisions, and the current handoff under `workshop/planner`; the developer implements only that handoff.
+- Added a copy-ready slide-generation prompt that reflects the verified architecture, checkpoint progression, two-session loop, screenshots, and visual direction.
+- Pinned all existing runtime and development dependencies to the versions already proven in rehearsal.
+- Preinstalled `@mermaid-js/layout-elk@0.2.2` so no dependency installation is required during Checkpoint 3.
+- Official validation passed for both repository skills.
+- Starter validation remained green: 3 test files, 10 tests, and a successful production build.

@@ -54,6 +54,7 @@ coordinates, or model-generated URLs.
 Install the dependencies needed by the later live build now, not on stage:
 
 - `mermaid` for deterministic diagram rendering;
+- `@mermaid-js/layout-elk` for the grouped layout checkpoint without a live dependency-install delay;
 - `zod` for validating repository and architecture graph contracts.
 
 The starter must not render Mermaid yet. Preinstallation is documented as a
@@ -75,4 +76,3 @@ webinar reliability measure.
 - URL parsing, filtering, bounding, and error mapping have focused tests.
 - No API token appears in browser output or the built bundle.
 - `npm test` and `npm run build` pass.
-
