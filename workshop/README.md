@@ -2,11 +2,14 @@
 
 This folder is the control center for presenters and attendees. Start with [`WORKSHOP_GUIDE.md`](WORKSHOP_GUIDE.md).
 
+For the live session, keep [`LIVE_PROMPT_CHEATSHEET.md`](LIVE_PROMPT_CHEATSHEET.md) open on the second screen. It contains only the messages to paste into the Planner and Developer R-CLI sessions.
+
 ## What each document is for
 
 | Path | Who uses it | Purpose |
 | --- | --- | --- |
 | `WORKSHOP_GUIDE.md` | Presenters and planner | Complete product explanation, architecture, stack, checkpoints, timing, and teaching notes |
+| `LIVE_PROMPT_CHEATSHEET.md` | Presenters | Copy-and-paste messages for both R-CLI sessions across all four checkpoints |
 | `planner/PLANNER_CONTEXT.md` | Planner session | Stable project truth, known rehearsal lessons, evidence order, and decision rules |
 | `planner/LIVE_STATE.md` | Planner session | Mutable checkpoint status, environment readiness, evidence, and timeline |
 | `planner/CURRENT_HANDOFF.md` | Planner and developer | The single bounded instruction the developer should execute next |

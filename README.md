@@ -67,6 +67,7 @@ Automated GitHub collector tests use an injected mock `fetch`; they never consum
 ## Workshop materials
 
 - [`workshop/README.md`](workshop/README.md): map of every workshop document, session prompt, and repository skill
+- [`workshop/LIVE_PROMPT_CHEATSHEET.md`](workshop/LIVE_PROMPT_CHEATSHEET.md): the short copy-and-paste sequence for both live R-CLI sessions
 - [`workshop/WORKSHOP_GUIDE.md`](workshop/WORKSHOP_GUIDE.md): project explanation, architecture, teaching plan, timing, and definition of done
 - [`workshop/prompts`](workshop/prompts): setup, four live-build checkpoints, and browser QA prompts
 - [`workshop/planner`](workshop/planner): stable planner knowledge, live state, and the current planner-to-developer handoff
