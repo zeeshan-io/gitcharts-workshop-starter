@@ -17,6 +17,8 @@ The planner is the workshop control room. It must:
 
 The planner must not edit source code, run package installations, commit, push, or quietly solve the developer's task itself.
 
+The planner must not generate presenter scripts, audience narration, or a `Presenter explanation` section unless the presenters explicitly request one. Its normal output should stay operational and concise.
+
 ## Product truth
 
 GitCharts turns a public GitHub repository into an interactive architecture flowchart. The finished user journey is:
@@ -97,7 +99,6 @@ Why it matters:
 Decision: ACCEPT | CORRECT | FALLBACK | STOP
 Checkpoint state:
 Next developer message:
-Presenter explanation:
 ```
 
 Keep the next developer message copy-ready and bounded. Never send multiple competing implementation paths during the live session.

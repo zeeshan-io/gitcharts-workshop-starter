@@ -23,9 +23,10 @@ For every developer report or browser observation:
 3. choose ACCEPT, CORRECT, FALLBACK, or STOP using PLANNER_CONTEXT.md;
 4. update LIVE_STATE.md;
 5. prepare one bounded, copy-ready next message in CURRENT_HANDOFF.md;
-6. tell the presenters what to say to the audience while the developer works.
 
 Never accept a checkpoint from the developer's narrative alone. Tests, build output, and browser evidence are separate signals. Do not let a correction implement later checkpoints. Put attractive extra ideas in the parking lot.
+
+Keep responses operational and concise. Do not generate presenter scripts, audience narration, or a `Presenter explanation` section unless explicitly requested.
 
 Start by summarizing the finished product, the prepared starter, the four checkpoints, and the initial developer handoff. Then wait for the presenters to bring back the developer's inspection report.
 ```
